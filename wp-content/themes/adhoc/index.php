@@ -13,14 +13,14 @@ get_header(); ?>
 
 <div class="wrapper">
 
-	<?php get_template_part( 'about_description' );	?>
+	<?php get_template_part( 'content', 'description' );	?>
 
-	<?php get_template_part( 'about_residents' ); ?>
+	<!-- <?php get_template_part( 'content', 'residents' ); ?> -->
 
 </div><!-- .wrapper -->
 
-<?php get_template_part( 'music_player' ); ?>
+<!-- <?php get_template_part( 'content', 'music_player' ); ?> -->
 
-<?php get_template_part( 'shows' ); ?>
+<!-- <?php get_template_part( 'content', 'shows' ); ?> -->
 
 <?php get_footer(); ?>

@@ -32,7 +32,7 @@
 <div class="wrapper">		
 	<header class="row clearfix">
 		<nav class="column full centered">
-			<img id="logo" src="img/adhoc-logo.svg">
+			<img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/adhoc-logo.svg">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			<!-- <ul>
 				<li><a class="scroll" href="#about-anchor">about</a></li>

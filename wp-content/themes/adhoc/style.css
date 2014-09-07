@@ -98,13 +98,20 @@ nav li { margin: 1.95em 0; }
 #about li { width: 35%; margin: 0 auto; margin-bottom: 0.2em; }
 #about img { width: 100%; }
 
+a.drop-line { 
+	color: #999;
+	border-bottom: 1px solid #999;
+	font-style: italic;
+}
+a.drop-line:hover { border-bottom: none; text-decoration: none; }
+
 #music p, #about p { font-family: 'Lora', serif; }
 #music h3 { margin-bottom: 0.35em; }
 
 #hero-img {
 	height: 200px;
 	width: 100%; 
-	background: url('../img/newyork-mobile.jpg') no-repeat center center;
+	background: url('images/newyork-mobile.jpg') no-repeat center center;
 }
 
 
@@ -114,21 +121,21 @@ nav li { margin: 1.95em 0; }
 #playback { padding-top: 0.3em; padding-bottom: 0.3em; }
 #playback button {  height: 35px; border: none; vertical-align: middle; display: inline-block; }
 .play-btn { 
-    background: url('../img/play_icon.png') no-repeat center center;
+    background: url('images/play_icon.png') no-repeat center center;
     width: 26px;
 }
 .pause-btn {
-	background: url('../img/pause_icon.png') no-repeat center center;
+	background: url('images/pause_icon.png') no-repeat center center;
 	width: 26px;
 }
 .speaker-btn {
-	background: url('../img/speaker_icon.png') no-repeat center center;	
+	background: url('images/speaker_icon.png') no-repeat center center;	
 	width: 40px;
 	margin-right: 14px;
 	float: right;
 }
 .muted-btn {
-	background: url('../img/mute_icon.png') no-repeat center center;	
+	background: url('images/mute_icon.png') no-repeat center center;	
 	width: 40px;
 	margin-right: 14px;
 	float: right;
@@ -161,7 +168,7 @@ progress::-moz-progress-bar { background-color: #141414; }
 #shows { 
 /* 	height: 45em;  */
 	border: black 1px solid;
-	background-image: url('../img/stars.jpg');
+	background-image: url('images/stars.jpg');
 	background-size: cover;
 	color: white;
 	padding-top: 5.1em; 
@@ -241,7 +248,7 @@ footer p { font-size: 0.45em; line-height: 5em; }
 	#hero-img {
 		height: 600px;
 		width: 100%; 
-		background: url('../img/newyork.jpg') no-repeat center center;
+		background: url('images/newyork.jpg') no-repeat center center;
 		background-size: cover;
 	}
 	#about p { padding: 0; }
