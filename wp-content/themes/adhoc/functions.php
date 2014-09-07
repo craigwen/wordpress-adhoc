@@ -1,11 +1,11 @@
 <?php
 	add_action( 'init', 'create_post_type' );
 	function create_post_type() {
-	  register_post_type( 'adhoc_about',
+	  register_post_type( 'adhoc_section',
 	    array(
 	      'labels' => array(
-	        'name' => __( 'About' ),
-	        'singular_name' => __( 'About' )
+	        'name' => __( 'Section' ),
+	        'singular_name' => __( 'Section' )
 	      ),
 	    'public' => true,
 	    'has_archive' => true,

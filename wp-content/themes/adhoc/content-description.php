@@ -2,6 +2,7 @@
 
 	$args = array(
 		'post_type' => "adhoc_about",
+		'post_title' => "about",
 		'posts_per_page' => 1,
 		);
 
