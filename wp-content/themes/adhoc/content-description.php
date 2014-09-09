@@ -1,8 +1,8 @@
 <?php
 
 	$args = array(
-		'post_type' => "adhoc_about",
-		'post_title' => "about",
+		'post_type' => "adhoc_section",
+		'category_name' => 'about',
 		'posts_per_page' => 1,
 		);
 
@@ -21,9 +21,26 @@
 			<p><a class="drop-line" href="mailto:hello@adhoc-ny.com" title="Email Adhoc">Drop us a line.</a></p>
 		</div>
 
-		<!-- <div class="column centered two-thirds space-top clearfix">
+
+<?php endwhile; ?>
+
+<?php endif;
+wp_reset_postdata(); ?>
+
+<?php
+	$args2 = array(
+		'post_type' => "adhoc_section",
+		'category_name' => "residents",
+		'posts_per_page' => 1,
+		);
+	$the_new_query = new WP_Query( $args2 ); ?>
+
+<?php if ( $the_new_query -> have_posts() ): while ( $the_new_query -> have_posts() ): $the_new_query -> the_post(); ?>
+
+<div class="column centered two-thirds space-top clearfix">
 			<h2>Residents</h2>
-			<ul>
+			<?php the_content(); ?>
+			<!-- <ul>
 				<li>
 					<dt><img src="img/tina.jpg" alt="Tina Scepanovic"></dt>
 					<dd>Tina Scepanovic</dd>
@@ -44,9 +61,9 @@
 					<dt><img src="img/val.jpg" alt="Valerie Madamba"></dt>
 					<dd>Valerie Madamba</dd>
 				</li>
-			</ul>
-		</div> -->
-	</section>	
+			</ul> -->
+		</div>
+	</section>
 
 <?php endwhile; ?>
 

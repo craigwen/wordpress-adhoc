@@ -1,5 +1,5 @@
 	<footer>
-		<p>&copy; 2014 adhoc, all rights reserved</p>
+		<p>&copy; <?php echo date('Y'); ?> adhoc, all rights reserved</p>
 	</footer>
 		
 				

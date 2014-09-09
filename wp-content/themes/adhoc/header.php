@@ -20,10 +20,7 @@
 	<meta property="og:image:height" content="506">
 	<meta property="og:description" content="Adhoc is a growing ensemble of vocalists and musicians living and performing in New York City. We explore the traditions of early music and also play with its possibilities, drawing from an eclectic array of influences to keep it fresh.">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" title="General styles">
-	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+	<?php wp_head(); ?>
 	<link href='http://fonts.googleapis.com/css?family=Lora:400,400,400italic,700italic,800|Montserrat:400,700' rel='stylesheet' type='text/css'> <!-- Google fonts -->
 </head>
 
