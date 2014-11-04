@@ -8,9 +8,9 @@
 
 	$the_query = new WP_Query( $args );
 
-?>
 
-<?php if ( $the_query -> have_posts() ): while ( $the_query -> have_posts() ): $the_query -> the_post(); ?>
+
+if ( $the_query -> have_posts() ): while ( $the_query -> have_posts() ): $the_query -> the_post(); ?>
 
 	<section id="about" class="row">
 		<div class="column half centered">
@@ -22,20 +22,19 @@
 		</div>
 
 
-<?php endwhile; ?>
+<?php endwhile;
 
-<?php endif;
-wp_reset_postdata(); ?>
+endif;
+wp_reset_postdata();
 
-<?php
-	$args2 = array(
-		'post_type' => "adhoc_section",
-		'category_name' => "residents",
-		'posts_per_page' => 1,
-		);
-	$the_new_query = new WP_Query( $args2 ); ?>
+$args2 = array(
+	'post_type' => "adhoc_section",
+	'category_name' => "residents",
+	'posts_per_page' => 1,
+	);
+$the_new_query = new WP_Query( $args2 );
 
-<?php if ( $the_new_query -> have_posts() ): while ( $the_new_query -> have_posts() ): $the_new_query -> the_post(); ?>
+if ( $the_new_query -> have_posts() ): while ( $the_new_query -> have_posts() ): $the_new_query -> the_post(); ?>
 
 <div class="column centered two-thirds space-top clearfix">
 			<h2>Residents</h2>

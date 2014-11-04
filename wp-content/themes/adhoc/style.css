@@ -107,6 +107,7 @@ nav li { margin: 1.95em 0; }
 #about li { width: 60%; margin: 0 auto; margin-bottom: 1.25em; }
 #about dd { font-family: 'Lora', serif; font-style: italic; text-align: center; margin-top: 0.45em; }
 #about img { width: 100%; }
+
 a.drop-line { 
 	color: #999;
 	border-bottom: 1px solid #999;
@@ -149,6 +150,12 @@ a.drop-line:hover { border-bottom: none; text-decoration: none; }
 	
 footer { background: black; color: white; }
 footer p { font-size: 0.45em; line-height: 5em; }
+
+/********************/
+/* Gallery Override */
+/********************/
+#gallery-1 img { border: none !important; }
+
 
 /***************/
 /* Grid Styles */
@@ -382,8 +389,8 @@ dd.pl-artist {
 		background-size: cover;
 	}
 	#about p { padding: 0; }
-	#about li { display: inline-block; width: 29.8%; margin-bottom: 0.75em; margin-right: 0.85em;}
-	
+	#about li, #about .gallery-item { display: inline-block; width: 29.8%; margin-bottom: 0.75em; margin-right: 0.85em; }
+
 	#playback1 { width: 100%; }
 	#playback-container { min-width: 600px; }
 	#playback1 progress { width: 65%; }
@@ -405,7 +412,7 @@ dd.pl-artist {
 	#logo { width: auto ;}
 	nav ul { top: 25px; float: right; margin-right: 0.5em; }
 	nav li { margin: 0 3.5em 0; }
-	#about li { width: 30.5%;}	
+	#about li, #about .gallery-item { width: 30.5% !important;}	
 }
 
 /* End media queries */
